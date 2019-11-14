@@ -38,7 +38,7 @@
     "selector-max-id": 0,
     "selector-pseudo-element-colon-notation": "double",
     "string-quotes": "single",
-    "unit-whitelist": ["px", "rem", "%", "vh", "vw", "s", "deg"],
+    "unit-whitelist": ["px", "rem", "%", "vh", "vw", "ms", "s", "deg"],
 
     # stylelint-scss
     "scss/dollar-variable-colon-space-after": "always",
