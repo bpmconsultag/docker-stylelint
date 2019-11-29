@@ -39,6 +39,9 @@
     "selector-pseudo-element-colon-notation": "double",
     "string-quotes": "single",
     "unit-whitelist": ["px", "rem", "%", "vh", "vw", "ms", "s", "deg", "fr"],
+    "value-no-vendor-prefix": [ true, {
+	"ignoreValues": ["zoom-in"]
+    }],
 
     # stylelint-scss
     "scss/dollar-variable-colon-space-after": "always",
