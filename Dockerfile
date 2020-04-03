@@ -1,4 +1,4 @@
-FROM node:latest
+FROM node:current-alpine
 RUN apt-get update
 RUN cd /usr/local/lib && npm install stylelint stylelint-scss --save-dev
 RUN mkdir /config
