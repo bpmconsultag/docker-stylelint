@@ -1,7 +1,7 @@
 FROM node:current-alpine
-RUN apk upgrade
-RUN cd /usr/local/lib && npm install stylelint stylelint-scss --save-dev
+WORKDIR /usr/local/lib
+RUN npm install stylelint@13.2.1 stylelint-scss@3.16.0 --save-dev
 RUN mkdir /config
 COPY .stylelintrc /tmp/stylelintrc
 WORKDIR /src
-ENTRYPOINT ["/usr/local/bin/stylelint", "--config", "../tmp/stylelintrc"]
+ENTRYPOINT ["/usr/local/bin/stylelint", "--config", "/tmp/stylelintrc"]
