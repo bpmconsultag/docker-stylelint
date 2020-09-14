@@ -16,6 +16,7 @@
         "ignoreProperties": ["cursor"]
     }],
     "declaration-block-trailing-semicolon": "always",
+    "declaration-block-semicolon-space-before": "never",
     "declaration-block-single-line-max-declarations": 2,
     "declaration-colon-space-after": "always",
     "declaration-no-important": true,
