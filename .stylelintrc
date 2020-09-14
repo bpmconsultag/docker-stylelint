@@ -41,7 +41,7 @@
     "selector-max-id": 0,
     "selector-pseudo-element-colon-notation": "double",
     "string-quotes": "single",
-    "unit-whitelist": ["px", "rem", "%", "vh", "vw", "ms", "s", "deg", "fr", "em"],
+    "unit-allowed-list": ["px", "rem", "%", "vh", "vw", "ms", "s", "deg", "fr", "em"],
     "value-no-vendor-prefix": [ true, {
 	"ignoreValues": ["zoom-in"]
     }],
