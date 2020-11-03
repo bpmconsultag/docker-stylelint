@@ -47,7 +47,6 @@
     }],
 
     # stylelint-scss
-    "scss/dollar-variable-colon-space-after": "always",
-    "scss/double-slash-comment-inline": "always"
+    "scss/dollar-variable-colon-space-after": "always"
   }
 }
