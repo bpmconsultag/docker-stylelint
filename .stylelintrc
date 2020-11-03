@@ -47,6 +47,6 @@
     }],
 
     # stylelint-scss
-    "scss/dollar-variable-colon-space-after": "always"
+    "scss/dollar-variable-colon-space-after": "always",
   }
 }
