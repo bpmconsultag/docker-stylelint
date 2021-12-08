@@ -1,7 +1,6 @@
-FROM node:current-alpine
+FROM alpine
+RUN apk add npm
 WORKDIR /usr/local/lib
-RUN npm install stylelint@13.7.2 stylelint-scss@3.18.0 --save-dev
-RUN mkdir /config
-COPY .stylelintrc /tmp/stylelintrc
+RUN ["npm", "install", "--save-dev", "stylelint", "stylelint-scss", "stylelint-config-standard-scss"]
 WORKDIR /src
-ENTRYPOINT ["/usr/local/bin/stylelint", "--config", "/tmp/stylelintrc"]
+ENTRYPOINT ["/usr/local/lib/node_modules/stylelint/bin/stylelint.js", "--config", ".stylelintrc"]
